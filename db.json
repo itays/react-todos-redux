@@ -1,0 +1,34 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "name": "configuration",
+      "isComplete": false
+    },
+    {
+      "id": 2,
+      "name": "start server",
+      "isComplete": false
+    },
+    {
+      "id": 3,
+      "name": "Load data",
+      "isComplete": false
+    },
+    {
+      "id": 4,
+      "name": "add record",
+      "isComplete": false
+    },
+    {
+      "id": 5,
+      "name": "update record",
+      "isComplete": false
+    },
+    {
+      "name": "another task",
+      "isComplete": false,
+      "id": 6
+    }
+  ]
+}
