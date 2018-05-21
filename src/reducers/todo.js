@@ -1,4 +1,5 @@
 import { getTodos, createTodo } from '../lib/todoServices';
+import { showMessage } from './messages';
 const initState = {
   todos: [],
   currentTodo: ''
@@ -14,7 +15,10 @@ export const loadTodos = (todos) => ({ type: TODOS_LOAD, payload: todos});
 export const addTodo = (todo) => ({type: TODO_ADD, payload: todo});
 
 export const fetchTodos = () => (dispatch) => getTodos().then(todos => dispatch(loadTodos(todos)));
-export const saveTodo = (name) => (dispatch) => createTodo(name).then(res => dispatch(addTodo(res)));
+export const saveTodo = (name) => (dispatch) => {
+  dispatch(showMessage('saving todo'))
+  createTodo(name).then(res => dispatch(addTodo(res)));
+}
 
 export default (state = initState, action) => {
   switch (action.type) {

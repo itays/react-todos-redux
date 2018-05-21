@@ -28,7 +28,7 @@
 }
 
 .todo-app {
-  padding-top: 20px;
+  padding-top: 35px;
   display: inline-block;
   text-align: left;
 }
@@ -45,4 +45,17 @@ ul {
 
 label {
   cursor: pointer;
+}
+
+.message {
+  background-color: deepskyblue;
+  color: white;
+  border: 1px solid deepskyblue;
+  position: absolute;
+  text-align: center;
+  width: 200px;
+  left: 50%;
+  margin-left: -100px;
+  top: 200px;
+
 }
