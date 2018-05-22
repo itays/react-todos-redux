@@ -57,5 +57,23 @@ label {
   left: 50%;
   margin-left: -100px;
   top: 200px;
+}
+li span.delete-item {
+  visibility: hidden;
+}
+span.delete-item button {
+  background: none;
+  border: none;
+  font-size: 1em;
+  text-decoration: none;
+  color: red;
+  cursor: pointer;
+}
 
+li:hover span.delete-item {
+  visibility: visible;
+}
+
+footer > a {
+  padding: 2px;
 }

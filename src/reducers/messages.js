@@ -1,3 +1,4 @@
+import { TODO_ADD, TODOS_LOAD, TODO_REPLACE, TODO_REMOVED } from './todo';
 const MESSAGE_SHOW = 'MESSAGE_SHOW';
 
 
@@ -7,6 +8,11 @@ export default (state = '', action) => {
   switch(action.type) {
     case MESSAGE_SHOW:
       return action.payload;
+    case TODO_ADD:
+    case TODOS_LOAD:
+    case TODO_REPLACE:
+    case TODO_REMOVED:
+      return '';
     default:
       return state;
   }
